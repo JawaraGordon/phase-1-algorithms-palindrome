@@ -1,9 +1,30 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(string) {
+  return reverseString(string);
 }
+function reverseString(word) {
+  const wordArray = word.split("");
+  const reversedWordArray = wordArray.reverse();
+  const reversedWord = reversedWordArray.join("");
+
+  if (reversedWord === word) {
+    // console.log(true);
+    return true;
+  } else {
+    // console.log(false);
+    return false;
+  }
+}
+
+// isPalindrome("racecar");
 
 /* 
   Add your pseudocode here
+  function isPalindrome receives one string argument
+    use regular expression: 
+  returns true if the string is a palindrome  
+  returns false if it's not a palindrome
+  lowercase strings only - no spaces or special characters
+
 */
 
 /*
